@@ -40,7 +40,7 @@ def sendMessage(to, text, contentMetadata={}, contentType=0):
 
 def NOTIFIED_ADD_CONTACT(op):
     try:
-        sendMessage(op.param1, client.getContact(op.param1).displayName + "Thanks for add, instagram @mkhadaffy18")
+        sendMessage(op.param1, client.getContact(op.param1).displayName + "Thanks for add, instagram @ponpakapapoi_")
     except Exception as e:
         print e
         print ("\n\nNOTIFIED_ADD_CONTACT\n\n")
@@ -128,9 +128,9 @@ def SEND_MESSAGE(op):
 #--------------------------------------------------------------
                 if msg.text == "Kick all":
                     print "ok"
-                    _name = msg.text.replace("Mulai","")
+                    _name = msg.text.replace("Santai Aja","")
                     gs = client.getGroup(msg.to)
-                    sendMessage(msg.to,"Author by Mkhadaffy")
+                    sendMessage(msg.to,"Author by Shuichi")
                     targets = []
                     for g in gs.members:
                         if _name in g.displayName:
